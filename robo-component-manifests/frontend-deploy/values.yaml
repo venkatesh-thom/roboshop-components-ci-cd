@@ -1,7 +1,6 @@
 deployment:
   replicas: 1
-  imageRepo: sathishdevops38/frontend
+  imageRepo: venkatesh990/frontend
   imageTag: v1
 service:
   type: LoadBalancer
-
