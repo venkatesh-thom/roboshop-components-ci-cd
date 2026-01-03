@@ -1,0 +1,14 @@
+@Library('roboshop-jenkins-shared-library') _
+
+def configMap = [
+    project: "roboshop",
+    component: "payment"
+]
+
+// if branch is not equal to main, then run CI pipeline
+if ( ! env.BRANCH_NAME.equalsIgnoreCase('main') ){
+      pythonEKSPipeline(configMap)
+}
+else {
+    echo "Please follow the CR process"
+}

@@ -1,0 +1,6 @@
+deployment:
+  replicas: 1
+  imageRepo: sathishdevops38/user
+  imageTag: v1
+service:
+  type: ClusterIP

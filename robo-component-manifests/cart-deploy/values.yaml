@@ -1,0 +1,6 @@
+deployment:
+  replicas: 1
+  imageRepo: 441700732169.dkr.ecr.us-west-2.amazonaws.com/roboshop/catalogue
+  imageTag: IMAGE_VERSION
+service:
+  type: ClusterIP
