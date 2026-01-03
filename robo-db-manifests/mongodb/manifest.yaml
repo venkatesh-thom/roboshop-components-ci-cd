@@ -22,19 +22,19 @@ spec:
         tier: db
     spec:
       containers:
-      - name: mongodb
-        image: sathishdevops38/mongodb:v1
-        readinessProbe:
-          tcpSocket:
-            port: 27017
-          initialDelaySeconds: 10
-          periodSeconds: 10
-        livenessProbe:
-          tcpSocket:
-            port: 27017
-          initialDelaySeconds: 5
-          periodSeconds: 5
-        imagePullPolicy: Always  
+        - name: mongodb
+          image: venkatesh990/mongodb:v1
+          readinessProbe:
+            tcpSocket:
+              port: 27017
+            initialDelaySeconds: 10
+            periodSeconds: 10
+          livenessProbe:
+            tcpSocket:
+              port: 27017
+            initialDelaySeconds: 5
+            periodSeconds: 5
+          imagePullPolicy: Always
 
 ---
 apiVersion: v1
@@ -52,4 +52,3 @@ spec:
       port: 27017 #serive port
       targetPort: 27017 #container port
 
-  

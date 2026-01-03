@@ -20,5 +20,5 @@ spec:
     spec:  
       containers:
       - name: debug
-        image: sathishdevops38/debug:v1
+        image: venkatesh990/debug:v1
         imagePullPolicy: Always
